@@ -1,0 +1,205 @@
+/* Reset padding and Margin and set font family to custom font */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Fauna One", serif;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  width: 100%;
+  height: 80px;
+  background-image: url("./images/wood-bg.png");
+  background-repeat: repeat-x;
+}
+/* Display logo image in the top center of the page */
+#header img {
+  display: block;
+  margin: auto;
+  height: 70px;
+  padding-top: 15px;
+}
+/* Style the top navigation bar */
+#tabs-top {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  z-index: 500;
+  width: 100%;
+  height: 40px;
+  background-color: forestgreen;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* Style the achor tag font */
+#tabs-top a {
+  padding-top: 12px;
+  height: 35px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+#main-home {
+  margin-top: 120px;
+}
+/* Style the bottom navigation container */
+ #tabs-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 500;
+  width: 100%;
+  height: 40px;
+  background-color: forestgreen;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* Style the achor tag font */
+#tabs-bottom a {
+  padding-top: 12px;
+  height: 35px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+/* Set the background image of main content  */
+#main {
+  margin-top: 119px;
+  background: url("./images/map-blur.png");
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+#content {
+  padding: 1px 0 50px 0;
+}
+
+a.info-box {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  height: 90px;
+  display: block;
+  margin: auto;
+  margin-top: 12px;
+  padding: 1px;
+}
+
+.info-box img {
+  height: 70px;
+  margin: 10px;
+  float: left;
+}
+
+.info-box h3 {
+  padding: 0;
+  margin-bottom: 0;
+  width: 90%;
+  color: #572800;
+}
+
+.info-box p {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  color: #131313;
+}
+
+.info-box img.right {
+  float: right;
+  margin-top: 25px;
+  height: 40px;
+}
+
+#main-elephant {
+  margin-top: 119px;
+  text-align: center;
+}
+
+#info-box-full {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  display: block;
+  margin: auto;
+  margin-top: 12px;
+  padding: 10px;
+}
+#info-box-full img {
+  width: 100%;
+}
+#info-box-full h3 {
+  text-align: center;
+}
+
+img.info-box-weather-icon {
+  height: 30px;
+  width: 30px !important;
+  margin: 10px;
+  float: left;
+  cursor: pointer;
+}
+h1.info-box-weather-icon {
+  font-size: 65px;
+  font-weight: 200;
+  padding: 0;
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+
+img.info-box-weather-icon:hover + .hide {
+  display: block;
+  transform: translate(15%);
+  padding-top: 15px;
+}
+
+table {
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #131313;
+}
+
+tr:nth-child(even) {
+  background-color: #929292;
+}
+
+input {
+  width: 100%;
+  height: 25px;
+  margin: 12px 0;
+  border: 1px solid #929292;
+}
+textarea {
+  width: 100%;
+  height: 25px;
+  margin: 12px 0;
+  border: 1px solid #929292;
+}
+.button {
+  display: block;
+  background-color: forestgreen;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 12px 0;
+  padding: 8px 0;
+}
+
+.sky {
+  background: url("./images/sky1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-position: bottom;
+  object-position: bottom;
+}
