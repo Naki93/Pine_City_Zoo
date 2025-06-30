@@ -47,7 +47,7 @@ body {
   margin-top: 120px;
 }
 /* Style the bottom navigation container */
- #tabs-bottom {
+#tabs-bottom {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -161,15 +161,19 @@ img.info-box-weather-icon:hover + .hide {
 
 table {
   width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
 }
 
 td,
 th {
   border: 1px solid #131313;
+  overflow-wrap: break-word;
+  font-size: 0.7em;
 }
 
 tr:nth-child(even) {
-  background-color: #929292;
+  background-color: #b9b2b2;
 }
 
 input {
@@ -196,10 +200,35 @@ textarea {
   padding: 8px 0;
 }
 
-.sky {
-  background: url("./images/sky1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-position: bottom;
-  object-position: bottom;
+/* Media
+  query
+  to
+  ensure
+  image
+  fits
+  into
+  smaller
+  screen
+  without
+  looking
+  streched */
+@media screen and (max-width: 438px) {
+  .main-map {
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  /* Responsive logo */
+  #header img {
+    display: block;
+    margin: auto;
+    height: 68%;
+    padding-top: 15px;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  p {
+    font-size: 0.7em;
+  }
 }
